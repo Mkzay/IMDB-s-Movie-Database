@@ -56,7 +56,7 @@ const SearchResults = () => {
   if (error) return <p>{error}</p>;
 
   return (
-    <div className="flex items-center justify-center h-screen bg-black">
+    <div className="flex items-center justify-center pt-20 pb-10 lg:p-0 lg:h-screen bg-black">
       <button
         onClick={handlePrevClick}
         className="absolute left-5 text-white p-2"
@@ -69,7 +69,7 @@ const SearchResults = () => {
             <li key={result.id} className="">
               <Link to={`/movies/${result.id}`}>
                 <img
-                  className="w-[100px] h-[350px] object-cover grayscale hover:h-[430px] hover:w-[250px] hover:grayscale-0 hover:delay-150 hover:duration-200"
+                  className="w-[160px] lg:w-[100px] h-[350px] object-cover grayscale lg:hover:h-[430px] lg:hover:w-[250px] hover:grayscale-0 hover:delay-150 hover:duration-200"
                   src={`https://image.tmdb.org/t/p/w500${result.poster_path}`}
                   alt={result.title || result.name}
                 />

@@ -34,14 +34,14 @@ const SearchBar = ({ isOpenSearchBar }) => {
     >
       <div className="flex items-center justify-center relative w-full">
         <input
-          className="w-11/12 lg:w-4/12 py-1 px-3 outline-none border border-purple-800"
+          className="w-11/12 md:w-7/12 lg:w-4/12 py-1 px-3 outline-none border border-purple-800"
           type="text"
           value={query}
           onChange={handleInputChange} // Update query state
           onKeyDown={handleKeyPress} // Allow search on "Enter"
         />
         <button
-          className="absolute text-purple-800 right-[470px]"
+          className="absolute text-purple-800 right-[470px] md:right-[190px]"
           onClick={handleSearch}
         >
           <FontAwesomeIcon icon={faMagnifyingGlass} />

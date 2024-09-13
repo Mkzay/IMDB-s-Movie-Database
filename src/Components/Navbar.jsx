@@ -4,12 +4,13 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const activeLink = "text-white text-base";
+  const hoverLink = "hover:text-white";
 
   return (
     <ul className="z-50 flex items-center justify-center gap-3 fixed top-8 right-0 left-0 text-gray-400 font-normal text-sm">
       <li>
         <NavLink
-          className={({ isActive }) => (isActive ? activeLink : "")}
+          className={({ isActive }) => (isActive ? activeLink : hoverLink)}
           to="/"
         >
           Home
@@ -18,7 +19,7 @@ const Navbar = () => {
       <FontAwesomeIcon icon={faCaretRight} />
       <li>
         <NavLink
-          className={({ isActive }) => (isActive ? activeLink : "")}
+          className={({ isActive }) => (isActive ? activeLink : hoverLink)}
           to="/TvShows"
         >
           Tv Shows
@@ -27,7 +28,7 @@ const Navbar = () => {
       <FontAwesomeIcon icon={faCaretRight} />
       <li>
         <NavLink
-          className={({ isActive }) => (isActive ? activeLink : "")}
+          className={({ isActive }) => (isActive ? activeLink : hoverLink)}
           to="/Movies"
         >
           Movies
@@ -36,7 +37,7 @@ const Navbar = () => {
       <FontAwesomeIcon icon={faCaretRight} />
       <li>
         <NavLink
-          className={({ isActive }) => (isActive ? activeLink : "")}
+          className={({ isActive }) => (isActive ? activeLink : hoverLink)}
           to="/People"
         >
           People
