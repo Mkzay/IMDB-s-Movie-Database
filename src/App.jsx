@@ -23,7 +23,10 @@ const App = () => {
     <ApiProvider>
       <Router>
         <Navbar />
-        <SearchBar isOpenSearchBar={isOpenSearchBar} />
+        <SearchBar
+          isOpenSearchBar={isOpenSearchBar}
+          setIsOpenSearchBar={setIsOpenSearchBar}
+        />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/tvshows" element={<TvShows />} />
