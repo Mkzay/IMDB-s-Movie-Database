@@ -28,10 +28,10 @@ const MovieList = () => {
   if (error) return <p>Error: {error}</p>;
 
   return (
-    <div className="flex items-center justify-center h-screen">
+    <div className="flex items-center justify-center pt-20 pb-10 lg:p-0 lg:h-screen">
       <button
         onClick={handlePrevClick}
-        className="absolute left-5 text-white p-2"
+        className="absolute left-5 text-white p-2 hidden lg:block"
       >
         <FontAwesomeIcon icon={faArrowLeft} />
       </button>
@@ -41,7 +41,7 @@ const MovieList = () => {
             <li key={movie.id} className="">
               <Link to={`/movies/${movie.id}`}>
                 <img
-                  className="w-[100px] h-[350px] object-cover grayscale hover:h-[430px] hover:w-[250px] hover:grayscale-0 hover:delay-150 hover:duration-200"
+                  className="w-[100px] h-[350px] object-cover grayscale lg:hover:h-[430px] lg:hover:w-[250px] hover:grayscale-0 hover:delay-150 hover:duration-200"
                   src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
                   alt={movie.title}
                 />
@@ -54,7 +54,7 @@ const MovieList = () => {
       )}
       <button
         onClick={handleNextClick}
-        className="absolute right-5 text-white p-2"
+        className="absolute right-5 text-white p-2 hidden lg:block"
       >
         <FontAwesomeIcon icon={faArrowRight} />
       </button>

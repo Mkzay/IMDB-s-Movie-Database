@@ -6,7 +6,7 @@ const Navbar = () => {
   const activeLink = "text-white text-base";
 
   return (
-    <ul className="hidden z-50 lg:flex items-center justify-center gap-3 fixed top-8 right-0 left-0 text-gray-400 font-normal text-sm">
+    <ul className="z-50 flex items-center justify-center gap-3 fixed top-8 right-0 left-0 text-gray-400 font-normal text-sm">
       <li>
         <NavLink
           className={({ isActive }) => (isActive ? activeLink : "")}

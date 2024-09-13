@@ -2,7 +2,7 @@ import PeopleList from "../Components/PeopleList";
 
 const People = () => {
   return (
-    <div className="bg-black h-screen w-full">
+    <div className="bg-black lg:h-screen w-full">
       <PeopleList />
     </div>
   );
