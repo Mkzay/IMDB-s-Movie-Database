@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Infobar = ({ openSearchBar }) => {
   return (
-    <div className="hidden lg:flex items-center justify-center gap-3 fixed bottom-4 left-0 right-0 mx-auto bg-black text-white font-bold w-fit p-1 rounded-md border border-[#272323]">
+    <div className="lg:flex items-center justify-center gap-3 fixed bottom-4 left-0 right-0 mx-auto bg-black text-white font-bold w-fit p-1 rounded-md border border-[#272323]">
       <img className="w-24 h-12 rounded-md" src="/IMDB.png" alt="IMDB Logo" />
       <ul className="flex items-center justify-center gap-12 px-5 text-xs bg-[#272323] h-12 rounded">
         <li className="flex items-center justify-center gap-1">

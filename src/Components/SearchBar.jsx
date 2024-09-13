@@ -30,11 +30,11 @@ const SearchBar = ({ isOpenSearchBar }) => {
         isOpenSearchBar
           ? "translate-y-100 opacity-100 delay-500 duration-200"
           : "-translate-y-[400%] opacity-0 delay-500 duration-200"
-      } fixed top-16 left-0 right-0 mx-auto flex items-center justify-center`}
+      } fixed top-16 left-0 right-0 mx-auto flex items-center justify-center z-50`}
     >
       <div className="flex items-center justify-center relative w-full">
         <input
-          className="w-4/12 py-1 px-3 outline-none border border-purple-800"
+          className="w-11/12 lg:w-4/12 py-1 px-3 outline-none border border-purple-800"
           type="text"
           value={query}
           onChange={handleInputChange} // Update query state
