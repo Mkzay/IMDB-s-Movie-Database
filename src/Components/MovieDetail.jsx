@@ -81,7 +81,7 @@ const MovieDetail = () => {
             ></iframe>
           )}
           {!trailer && <p>No trailer available</p>}
-          <div className="text-white relative flex flex-col items-center gap-12 md:gap-48 lg:gap-80 pt-20 p-5 md:flex-row">
+          <div className="text-white relative flex flex-col items-center gap-4 md:gap-48 lg:gap-80 pt-20 p-5 md:flex-row">
             <h1 className="text-5xl font-bold flex-1">{movieDetails.title}</h1>
             <div className="flex-1">
               <p className="text-sm">
@@ -90,7 +90,7 @@ const MovieDetail = () => {
               </p>
             </div>
           </div>
-          <div className="text-white font-semibold relative top-0 md:top-96 lg:top-60 py-2 px-5 bg-[#272323] w-9/12 md:w-5/12 lg:w-3/12">
+          <div className="text-white font-semibold absolute md:h-fit bottom-20 py-2 px-5 bg-[#272323] w-9/12 md:w-5/12 lg:w-3/12">
             <p>Title: {movieDetails.title}</p>
             <p>Language: {movieDetails.original_language}</p>
             <p>Popularity: {movieDetails.popularity}</p>
