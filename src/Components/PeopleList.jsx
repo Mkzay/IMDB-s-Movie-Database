@@ -39,7 +39,7 @@ const PeopleList = () => {
           {people.slice(currentIndex, currentIndex + 9).map((person) => (
             <li key={person.id} className="">
               <img
-                className="w-[160px] lg:w-[100px] h-[350px] object-cover grayscale lg:hover:h-[430px] lg:hover:w-[250px] hover:grayscale-0 hover:delay-150 hover:duration-200"
+                className="w-[170px] lg:w-[100px] h-[350px] object-cover grayscale lg:hover:h-[430px] lg:hover:w-[250px] hover:grayscale-0 hover:delay-150 hover:duration-200"
                 src={`https://image.tmdb.org/t/p/w500${person.profile_path}`}
                 alt={person.name}
               />
